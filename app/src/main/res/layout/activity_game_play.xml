@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202A68"
+    tools:context=".GamePlay">
+
+    <TextView
+        android:id="@+id/txtBank2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="  $500"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/txtBank1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtBank6" />
+
+    <TextView
+        android:id="@+id/txtBank1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="  $100"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtBank5" />
+
+    <TextView
+        android:id="@+id/txtBank7"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="    $500,000"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/txtBank2"
+        app:layout_constraintEnd_toStartOf="@+id/txtBank3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBank4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtBank6"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="    $125,000"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBank2"
+        app:layout_constraintEnd_toStartOf="@+id/txtBank2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtBank2" />
+
+    <TextView
+        android:id="@+id/txtBank8"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="    $1,000,000"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBank4"
+        app:layout_constraintEnd_toStartOf="@+id/txtBank4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtBank4" />
+
+    <TextView
+        android:id="@+id/titleBank"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:background="#49368F"
+        android:gravity="center"
+        android:text="BANK"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBank4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBank4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="  $20,000"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/txtBank3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtBank8" />
+
+    <TextView
+        android:id="@+id/txtBank5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="    $50,000"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBank1"
+        app:layout_constraintEnd_toStartOf="@+id/txtBank1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBank2" />
+
+    <TextView
+        android:id="@+id/txtBank3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#735CB1"
+        android:text="  $1000"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/txtBank2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtBank7" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Question"
+        android:textColor="#DDDDDD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLifelines"
+        app:layout_constraintVertical_bias="0.47000003" />
+
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F59E8"
+        android:onClick="onBtnD"
+        android:text="D"
+        app:layout_constraintBottom_toBottomOf="@+id/btnC"
+        app:layout_constraintEnd_toEndOf="@+id/btnB"
+        app:layout_constraintStart_toStartOf="@+id/btnB"
+        app:layout_constraintTop_toTopOf="@+id/btnC" />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F59E8"
+        android:onClick="onBtnB"
+        android:text="B"
+        app:layout_constraintBottom_toBottomOf="@+id/btnA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnA"
+        app:layout_constraintTop_toTopOf="@+id/btnA"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#3F59E8"
+        android:onClick="onBtnC"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/titleBank"
+        app:layout_constraintEnd_toEndOf="@+id/btnA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnA" />
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#3F59E8"
+        android:onClick="onBtnA"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/btnC"
+        app:layout_constraintEnd_toStartOf="@+id/btnB"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLifelines"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3F59E7"
+        android:text="Lifelines"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
