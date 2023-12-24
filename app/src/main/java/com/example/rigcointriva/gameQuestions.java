@@ -11,7 +11,7 @@ public class gameQuestions {
     public String[] mode2IA2 = {"A group of animals that live and hunt together for survival.", "980 degrees F", "28,346.457 inches per minute", "D"};
 
     public String[] mode2IA3 = {"A weather phenomenon characterized by heavy rainfall and strong winds.", "990 degrees F", "12 meters per second", "A"};
-
+    //new code
     public String[] questions = {
             "What are monoids?",
             "How hot is a 300-watt Halogen light bulb?",
