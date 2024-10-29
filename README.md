@@ -1,4 +1,4 @@
-# RigCoinaire
+# RigCoinaire Trivia Game
 Trivia Game Android application
 
 ## About
